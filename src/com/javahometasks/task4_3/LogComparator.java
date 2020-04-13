@@ -43,11 +43,11 @@ public class LogComparator {
         for (int i = 0; i < logs.size(); i++) {
             while (startLog < logs.size() - 1) {
                 int currentMax = 1;
-                currentEnd = logs.get(i).end;
+                currentEnd = logs.get(i).getEnd();
 
                 for (int j = startLog; j < logs.size(); j++) {
-                    if (currentEnd > logs.get(j).start) {
-                        currentEnd = Math.min(logs.get(i).end, logs.get(j).end);
+                    if (currentEnd > logs.get(j).getStart()) {
+                        currentEnd = Math.min(logs.get(i).getEnd(), logs.get(j).getEnd());
                         currentMax += 1;
                     }
                 }
