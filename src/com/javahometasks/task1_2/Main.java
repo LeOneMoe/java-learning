@@ -14,11 +14,11 @@ public class Main {
         String word = "palindrome";
         System.out.println(word);
 
-        char symbols[] = word.toCharArray();
+        char[] symbols = word.toCharArray();
 
         List<String> allMatches = new ArrayList<>();
 
-        Matcher m = Pattern.compile(pattern).matcher(word);
+        Matcher m = Pattern.compile(pattern, Pattern.CASE_INSENSITIVE).matcher(word);
 
         while (m.find()) {
             allMatches.add(m.group());
