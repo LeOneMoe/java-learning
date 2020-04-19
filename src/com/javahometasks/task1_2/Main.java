@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
 
-        String pattern = "[aeiouy]";
+        String pattern = "[aeiou]";
 
         String word = "palindrome";
         System.out.println(word);
